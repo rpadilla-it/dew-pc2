@@ -44,10 +44,10 @@ public class PagoContribuyenteController {
     @RequestMapping(value = "/pagos/buscar", method=RequestMethod.POST)
     public ModelAndView buscar(@ModelAttribute("criterioBusqueda") CriterioBusquedaPagos criterio, SessionStatus status) {
 
-        log.info("resultado = " + pagoContribuyenteService.buscarPorRuc(criterio.getRuc()).size());
+        log.info("resultado = " + pagoContribuyenteService.buscarPorRuc(criterio.getIdcontribuyente_ruc()).size());
         
         ModelAndView mav = new ModelAndView("pagos/resultadoBusqueda");
-        mav.getModel().put("resultado",pagoContribuyenteService.buscarPorRuc(criterio.getRuc()));
+        mav.getModel().put("resultado",pagoContribuyenteService.buscarPorRuc(criterio.getIdcontribuyente_ruc()));
         
         return mav;
     }

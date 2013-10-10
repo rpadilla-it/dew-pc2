@@ -8,17 +8,23 @@
 <div class="container">
     <table class="table table-striped">
         <tr>
-            <th>Nombre</th>
-            <th>Correo Electrónico</th>
-            <th style="width: 150px;"></th>
-            <th style="width: 150px;"></th>
+            <th>C&oacute;digo de Tributo</th>
+            <th>Nombre Tributo</th>
+            <th>Ejercicio</th>
+            <th>periodo</th>
+            <th>RUC</th>
+            <th>Razón Social</th>
+            <th>Tipo Persona</th>
         </tr>
-        <c:forEach var="usuario" items="${resultado}">
+        <c:forEach var="pago" items="${resultado}">
             <tr>
-                <td>${usuario.nombre}</td>
-                <td>${usuario.correo}</td>
-                <td>${usuario.nombre}</td>
-                <td>${usuario.correo}</td>
+                <td>${pago.idTributo}</td>
+                <td>${pago.nombre_tributo}</td>
+                <td>${pago.ejercicio}</td>
+                <td>${pago.periodo}</td>
+                <td>${pago.idcontribuyente_ruc}</td>
+                <td>${pago.razon_social}</td>
+                <td>${pago.nombre_tipo}</td>
             </tr>
         </c:forEach>
     </table>

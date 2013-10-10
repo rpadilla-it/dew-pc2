@@ -6,7 +6,7 @@
       <a class="brand" href="/home">DEW-PC2</a>
       <div class="nav-collapse" id="main-menu">
         <ul class="nav pull-right" id="main-menu-right">
-          <li><div class="texto">Sunat - Pago de contribuyentes</div></li>
+          <li><div class="texto">U201115734 Ronald Padilla</div></li>
         </ul>
       </div>
     </div>
