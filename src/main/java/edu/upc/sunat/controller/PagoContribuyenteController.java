@@ -33,9 +33,9 @@ public class PagoContribuyenteController {
     @RequestMapping("/pagos/index")
     public ModelAndView index() {
         ModelAndView mav = new ModelAndView("pagos/index");
-        List<PagoContribuyente> pagosContribuyente = pagoContribuyenteService.buscarTodos();
+        List<PagoContribuyente> pagoContribuyente = pagoContribuyenteService.buscarTodos();
         CriterioBusquedaPagos criterioBusqueda = new CriterioBusquedaPagos();
-        mav.addObject("pagosContribuyente", pagosContribuyente);
+        mav.addObject("pagoContribuyente", pagoContribuyente);
         mav.addObject("criterioBusqueda",criterioBusqueda);
         return mav;
     }

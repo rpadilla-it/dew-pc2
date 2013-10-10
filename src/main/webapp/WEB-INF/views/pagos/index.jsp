@@ -12,7 +12,7 @@
     <br><br><br><br>
     <div class="row pull-right">
         <form:form action="buscar" method="post" commandName="criterioBusqueda" cssClass="form-search">
-            <form:input path="ruc" size="10" cssClass="input-xlarge search-query"></form:input>
+            <form:input path="idcontribuyente_ruc" size="13" cssClass="input-xlarge search-query"></form:input>
             <input type="submit" value="Buscar" class="btn"/>
         </form:form>
     </div>        
@@ -27,15 +27,15 @@
             <th>Razón Social</th>
             <th>Tipo Persona</th>
         </tr>
-        <c:forEach var="usuario" items="${pagosContribuyente}">
+        <c:forEach var="pago" items="${pagoContribuyente}">
             <tr>
-                <td>${pagosContribuyente.idTributo}</td>
-                <td>${pagosContribuyente.nombre_tributo}</td>
-                <td>${pagosContribuyente.ejercicio}</td>
-                <td>${pagosContribuyente.periodo}</td>
-                <td>${pagosContribuyente.idcontribuyente_ruc}</td>
-                <td>${pagosContribuyente.razon_social}</td>
-                <td>${pagosContribuyente.nombre_tipo}</td>
+                <td>${pago.idTributo}</td>
+                <td>${pago.nombre_tributo}</td>
+                <td>${pago.ejercicio}</td>
+                <td>${pago.periodo}</td>
+                <td>${pago.idcontribuyente_ruc}</td>
+                <td>${pago.razon_social}</td>
+                <td>${pago.nombre_tipo}</td>
             </tr>
         </c:forEach>
     </table>
